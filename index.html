@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معايير إعداد المادة العلمية</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Tajawal) for a modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        
+        /* Smooth transition for accordion content */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), padding 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0 2rem;
+        }
+        
+        /* Style for the chevron icon rotation */
+        .accordion-button.active .chevron-icon {
+            transform: rotate(-180deg);
+        }
+        .chevron-icon {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Justify text within the lists */
+        .accordion-content ul li {
+            text-align: justify;
+            hyphens: auto; /* Improve justification */
+        }
+
+        /* Custom list bullets */
+        .custom-list {
+            list-style: none;
+            padding-right: 0;
+        }
+        .custom-list li {
+            position: relative;
+            padding-right: 1.75rem; /* Space for the custom bullet */
+            margin-bottom: 0.75rem;
+        }
+        .custom-list li::before {
+            content: '•';
+            position: absolute;
+            right: 0;
+            top: 1px;
+            color: #3b82f6; /* blue-500 */
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-3">مقترح لمعايير إعداد المادة العلمية</h1>
+            <p class="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+                فيما يلي مجموعة من المعايير التي يجب على مؤلف المادة العلمية الالتزام بها، لضمان جودة المحتوى وفاعليته في تحقيق الأهداف التدريبية للمواد المؤلَّفة.
+            </p>
+        </header>
+
+        <!-- Accordion Container -->
+        <div id="accordion-container" class="max-w-4xl mx-auto space-y-4">
+            
+            <!-- Accordion Item 1: Methodology and Content -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                        </div>
+                        أولًا: المنهجية العلمية والمحتوى
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>الاعتماد على مصادر موثوقة ومحدثة (عربية وأجنبية)، مع توثيقها وفق المنهجية المعتمدة.</li>
+                        <li>عرض المفاهيم الإستراتيجية بدقة، وبلغة فصيحة واضحة بعيدة عن الترجمة الحرفية.</li>
+                        <li>تضمين أمثلة تطبيقية واقعية (محلية أو عالمية) لدعم الفهم العملي.</li>
+                        <li>بناء المحتوى بناءً على الأهداف؛ بحيث يُربَط كل محور وهدف تدريبي بأنشطة وتقييمات مناسبة.</li>
+                        <li>مراعاة التنظيم والتسلسل المنطقي في عرض المحتوى، والانتقال السلس بين الأفكار.</li>
+                        <li>مراعاة التوازن في تناول المادة العلمية من حيث الكم والكيف، وتجنُّب الإطناب الذي يؤدي إلى الحشو أو الإيجاز الذي يؤدي إلى الإخلال بالمعنى.</li>
+                        <li>تُحدَّد فئة المتدرِّبين المستهدَفين في بداية كل مقرر (مبتدئ، متوسط، متقدِّم)، ويُكيَّف عمق المحتوى وأسلوب عرضه بما يتناسب مع مستواهم المعرفي؛ لضمان ألَّا يكون المحتوى مبسَّطًا مُخِلًّا، أو معقَّدًا مُربكًا.</li>
+                        <li>مواكبة المحتوى لأحدث التوجُّهات والممارسات في مجال العمل المعني، وتجنُّب المفاهيم أو النماذج التي أصبحت قديمة أو أقل استخدامًا، ما لم يكن ذلك لغرض المقارنة التاريخية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2: Language and Style -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                     <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C13.18 7.061 14.1 10.032 15 13.5M9 13.5H3M7.5 21l3-9M3 15h4.5" /></svg>
+                        </div>
+                        ثانيًا: اللغة والأسلوب
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>الكتابة بلغة عربية فصيحة ومباشرة، وتجنُّب العامية أو التعبيرات الركيكة أو الحشو أو الترجمة السيئة.</li>
+                        <li>تحديد نبرة موحدة للمادة العلمية (مثال: نبرة رسمية موضوعية، أو نبرة تفاعلية مباشرة تخاطب المتدرب) والالتزام بها في جميع أجزاء المحتوى؛ لضمان تجربة متسقة.</li>
+                        <li>تجنُّب التكرار ما لم يكن لغرض تعليمي، والاقتصاد في العبارات دون إخلال بالمعنى.</li>
+                        <li>عدم استخدام مصطلحات أجنبية إلا للضرورة، مع تعريبها وشرحها عند أول ورود.</li>
+                        <li>تجنُّب استخدام التراكيب الضعيفة، مثل: «بشكل كبير»، «يقوم بـ»، «تم إجراء»، «بالتالي»، و«من خلال» في غير موضعها.</li>
+                        <li>ضبط علامات الترقيم، واستخدام الحركات عند احتمال التباس المعنى.</li>
+                        <li>الالتزام بضبط الكلمات المعرَّبة التي في أصلها تبدأ بساكن: يُضاف في أولها همزة قطع مضمومة إذا كان ما بعد الساكن مضمومًا، مثل: (أُستُوديو، أُسْكُتْلَنْدَا، …)، ونكسر الهمزة إذا كان غير ذلك، مثل: (إِسْتِراتيجية، إِسْتَاد، …).</li>
+                        <li>استخدام أقواس التنصيص المعتمدة هي: « » (اختصاراتها: alt+0174 — alt+0175)، وعدم استخدام هذه الأقواس "".</li>
+                        <li>اتباع منهج المدرسة الشامية في رسم الهمزة المتوسطة، مثل: (مسؤول، شؤون، رؤوس …).</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Other Accordion items follow the same improved structure -->
+
+            <!-- Accordion Item 3: Structure and Organization -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" /></svg>
+                        </div>
+                        ثالثًا: البنية والتنظيم
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                   <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>تقسيم المحتوى إلى وحدات ومحاور واضحة ذات عناوين فرعية دقيقة ومعبِّرة.</li>
+                        <li>بدء كل محور أو موضوع بذكر الأهداف التعليمية الخاصة به، ليعرف المتدرب ما يُتوقع منه تعلمه في هذا الجزء تحديدًا.</li>
+                        <li>تقديم تمهيد لكل محور يشرح أهميته، وربطه بالمحور السابق واللاحق.</li>
+                        <li>كتابة خاتمة لكل وحدة تدريبية، تُلخِّص أهم ما ورد فيها وتربط المحتوى بالأهداف.</li>
+                        <li>الالتزام بتنسيق ثابت للعناصر، مثل الجداول، والرسوم، والتعداد، والأمثلة.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4: Activities and Assessment -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 019 9v.375M10.125 2.25A3.375 3.375 0 0113.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 013.375 3.375M9 15l2.25 2.25L15 12" /></svg>
+                        </div>
+                        رابعًا: الأنشطة والتقييم
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>تصميم أنشطة تدريبية متنوعة (صواب أم خطأ، اختيار من متعدد، دراسة حالة، نشاط جماعي).</li>
+                        <li>ربط كل نشاط بهدف تدريبي محدد مذكور في بداية الوحدة.</li>
+                        <li>تصميم الأنشطة بحيث تحاكي مواقف ومشكلات من بيئة العمل الواقعية قدر الإمكان، لتعزيز المهارات التطبيقية.</li>
+                        <li>تضمين تغذية راجعة مثالية أو نموذجية للأنشطة المقترحة عند الحاجة.</li>
+                        <li>التنويع في فِكَر الأسئلة، وتجنُّب تكرار فكرة واحدة في النشاط نفسه.</li>
+                        <li>التأكُّد من قوة البدائل في الأسئلة الموضوعية مع مراعاة تدرُّجها وتناسبها.</li>
+                        <li>مراعاة أن تكون البدائل متسقة مع السؤال نحويًّا، وقابلة للمقارنة من حيث التفاصيل والصياغة والطول، مع تجنُّب التلميح للإجابة أو الغموض التام؛ وذلك بأن تكون معقولة قوية محتملة للإجابة، حتى يتوهم المتدرب أن هناك أكثر من بديل صحيح، ولكن بديل واحد هو الصواب.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Accordion Item 5: Formatting -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                       <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.43 2.43a4.5 4.5 0 008.642-1.128 3 3 0 00-5.78-1.128zM15.75 5.25v13.5m-7.5-13.5v13.5" /></svg>
+                       </div>
+                        خامسًا: التنسيق الشكلي والفني
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>استخدام خط معتمد (يُحدَّد لاحقًا)، بحجم مناسب: (16–18 للعناوين الرئيسة، و14–16 للمتن).</li>
+                        <li>توحيد تنسيق العناوين (العنوان الرئيس بخط عريض، والفرعي كذلك بخط عريض لكن بسمك أقل).</li>
+                        <li>إدراج الجداول والأشكال بتسميات دقيقة، مع الإشارة إلى المصدر إن وُجد.</li>
+                        <li>ضرورة التأكد من صحة المصادر والمراجع النهائية.</li>
+                        <li>تنسيق قائمة المراجع النهائية وفق النموذج السعودي المعتمد، مع الفصل بين العربية والإنجليزية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6: Authenticity and Intellectual Property -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>
+                        </div>
+                        سادسًا: الأصالة والحقوق الفكرية
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>تجنُّب استخدام أدوات الذكاء الاصطناعي (Generative AI) في إنشاء أو تأليف المحتوى العلمي الأساسي للمادة؛ لضمان الأصالة والعمق الفكري البشري.</li>
+                        <li>ضمان خلو المحتوى من السرقة العلمية أو النقل المباشر غير الموثَّق.</li>
+                        <li>استخدام البرامج أو المواقع المناسبة للكشف عن الانتحال إن وُجِد اشتباه.</li>
+                        <li>الإشارة الصريحة إلى أيِّ محتوًى مقتبَس من كتاب أو دراسة أو موقع إلكتروني.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Accordion Item 7: Additional Notes -->
+            <div class="accordion-item bg-white border border-slate-200/80 rounded-xl shadow-md shadow-slate-200/50 overflow-hidden transition-all duration-300">
+                <button class="accordion-button w-full flex justify-between items-center text-right p-5 font-bold text-lg text-slate-800 hover:bg-slate-50 focus:outline-none transition-colors duration-300">
+                    <span class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg>
+                        </div>
+                        ملاحظات تنظيمية إضافية (اختيارية)
+                    </span>
+                    <svg class="chevron-icon w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="custom-list text-slate-600 space-y-3 py-5 leading-loose">
+                        <li>إرسال المحتوى على هيئة ملف وورد مفتوح.</li>
+                        <li>يُفضَّل أن تحتوي كل وحدة على مخطط مفاهيمي أو جدول تلخيصي.</li>
+                        <li>الالتزام بتسليم المحتوى حسب الجدول الزمني المحدد، مع مراعاة وقت للمراجعة والتحكيم.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+         <footer class="text-center mt-16 text-sm text-slate-500">
+            <p>© 2025 - إعداد وتصميم: رضا جبريل</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for Accordion Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            
+            // Function to close all accordions except the current one
+            const closeAllAccordions = (currentButton) => {
+                accordionButtons.forEach(btn => {
+                    if (btn !== currentButton) {
+                        btn.classList.remove('active');
+                        btn.nextElementSibling.style.maxHeight = null;
+                        btn.nextElementSibling.style.paddingTop = '0';
+                        btn.nextElementSibling.style.paddingBottom = '0';
+                    }
+                });
+            };
+
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const wasActive = button.classList.contains('active');
+                    
+                    // First, close all other accordions
+                    closeAllAccordions(button);
+
+                    // Then, toggle the clicked accordion
+                    if (!wasActive) {
+                        button.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.style.paddingTop = '1.25rem'; // py-5
+                        content.style.paddingBottom = '1.25rem'; // py-5
+                    } else {
+                         button.classList.remove('active');
+                         content.style.maxHeight = null;
+                         content.style.paddingTop = '0';
+                         content.style.paddingBottom = '0';
+                    }
+                });
+            });
+
+            // Optional: Open the first accordion item by default
+            if(accordionButtons.length > 0) {
+                 setTimeout(() => { // Use timeout to ensure proper rendering before click
+                    accordionButtons[0].click();
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
